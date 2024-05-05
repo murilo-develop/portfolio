@@ -1,0 +1,746 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+img {
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.no-click {
+    pointer-events: none;
+}
+
+header {
+    height: 30px;
+    background-color: #333;
+}
+
+header nav {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+
+header nav .content-left {
+    float: left;
+    width: 50%;
+    height: 30px;
+}
+
+header nav .content-left ul {
+    list-style: none;
+}
+
+header nav .content-left ul li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+header nav .content-left ul li:first-child a {
+    color: rgb(87, 87, 253);
+}
+
+header nav .content-right {
+    float: right;
+    width: 50%;
+    height: 28px;
+    color: #FFF;
+    margin-top: 2px;
+}
+
+header nav .content-right a {
+    float: right;
+}
+
+header nav .content-right img {
+    margin-right: 3px;
+    width: 26px;
+    height: 26px;
+}
+
+header nav .content-right input {
+    float: right;
+}
+
+header nav .content-right input[type="text"] {
+    width: 110px;
+    height: 26px;
+    outline: none;
+}
+
+header nav .content-right input[type="image"] {
+    background-color: red;
+}
+
+.banner-group {
+    height: 95px;
+}
+
+.banner-group .banner {
+    width: 100%;
+    max-width: 1040px;
+    height: 95px;
+    margin: auto;
+}
+
+.banner-group .banner .content-left {
+    float: left;
+    width: 230px;
+    height: 95px;
+}
+
+.banner-group .banner .content-left img {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.banner-group .banner .content-right {
+    float: right;
+    width: 650px;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 7px;
+    background-color: red;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.menu {
+    height: 40px;
+    background-color: red;
+}
+
+.menu .items {
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.menu .items .hamburger {
+    display: none;
+    width: 34px;
+    height: 40px;
+    line-height: 10px;
+    margin-left: 8px;
+}
+
+.menu .items .hamburger .bar {
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.menu .items ul {
+    float: left;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    position: relative;
+}
+
+.menu .items ul a {
+    display: block;
+}
+
+.menu .items ul li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.menu .items ul li img {
+    width: 10px;
+    height: 10px;
+}
+
+.menu .items ul li:hover {
+    background-color: #a60d0f;
+}
+
+.menu .items ul li:hover .sub-menu {
+    display: block;
+}
+
+.menu .items ul li .sub-menu {
+    width: 150px;
+    position: absolute;
+    top: 40px;
+    display: none;
+    z-index: 9999;
+}
+
+.menu .items ul li .sub-menu .sub-menu-item {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #a60d0f;
+    padding-left: 10px;
+}
+
+.menu .items ul li .sub-menu .sub-menu-item:hover {
+    background-color: #FF5555;
+}
+
+.last-news .highlight {
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.last-news .holder {
+    width: 100%;
+    max-width: 1040px;
+    height: 28px;
+    border: 1px solid #b8b6b6;
+    margin-top: 10px;
+}
+
+.last-news .highlight .content-left {
+    display: inline-block;
+    color: #FFF;
+    background-color: red;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.last-news .highlight .content-right {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    color: #818181;
+    padding-left: 10px;
+}
+
+.container .holder {
+    width: 100%;
+    max-width: 1040px;
+    height: 335px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.container .holder .content-left {
+    float: left;
+    width: 753px;
+    position: relative;
+}
+
+.container .holder .content-left .slideshow {
+    height: 335px;
+    overflow: hidden;
+}
+
+.container .holder .content-left .slideshow .area {
+    height: 335px;
+    transition: all 1s;
+}
+
+.container .holder .content-left .slideshow .area .dots {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-size: 56px;
+    height: 325px;
+    z-index: 9998;
+}
+
+.container .holder .content-left .slideshow .area .dots .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #818181;
+    border-radius: 50%;
+    border: 1px solid #818181;
+    margin-left: 15px;
+    float: left;
+}
+
+.container .holder .content-left .slideshow .area .dots .dot:hover {
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+.container .holder .content-left .slideshow .area .dots .dot.active {
+    background-color: #FFF;
+}
+
+.container .holder .content-left .slideshow .area .slide {
+    height: 335px;
+    float: left;
+    position: relative;
+}
+
+.container .holder .content-left .slideshow .area .slide img {
+    width: 100%;
+    height: 335px;
+}
+
+.container .holder .content-left .slideshow .area .slide .content {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 265px;
+    left: 0px;
+    color: #FFF;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgb(0, 0, 0));
+}
+
+.container .holder .content-left .slideshow .area .slide .content .description {
+    height: 50px;
+    padding-top: 20px;
+}
+
+.container .holder .content-left .slideshow .area .slide .content .description .title {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container .holder .content-left .slideshow .area .slide .content .description .sub-title {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container .holder .content-right {
+    float: right;
+    width: 275px;
+    margin-left: 12px;
+}
+
+.container .holder .content-right .widget {
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+
+.container .holder .content-right .widget .title {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+    background-color: #DDD;
+    border-bottom: 1px solid #CCC;
+}
+
+.container .holder .content-right .widget .description {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container .holder .content-right .widget .description .news-item {
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 1px solid #CCC;
+}
+
+.container .holder .content-right .widget .description .news-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container .holder .content-right .widget .description img {
+    margin-right: 3px;
+    width: 26px;
+    height: 26px;
+}
+
+.container .holder .content-right .widget .description .advertise {
+    margin: 0px;
+    width: 273px;
+    height: auto;
+}
+
+.container .holder .content-right .widget .description .facebook {
+    width: 273px;
+    height: 275px;
+    border: none;
+    overflow: hidden;
+}
+
+section.container .holder {
+    margin-top: 20px;
+}
+
+section.container .holder .widget {
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+
+section.container .holder .widget a {
+    color: #000;
+    text-decoration: none;
+}
+
+section.container .holder .widget .title {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+    background-color: #DDD;
+    border-bottom: 1px solid #CCC;
+}
+
+section.container .holder .widget .description {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+section.container .holder .widget .description .left {
+    float: left;
+    width: 430px;
+    height: 420px;
+}
+
+section.container .holder .widget .description .left .news-item {
+    height: 88px;
+    font-size: 100%;
+    margin: 7px 0 7px 0;
+    padding: 0;
+    border: none;
+}
+
+section.container .holder .widget .description .left .news-item .image {
+    float: left;
+    width: 384px;
+    height: 222px;
+    padding: 3px;
+    border: 1px solid #CCC;
+    margin-left: 10px;
+}
+
+section.container .holder .widget .description .left .news-item .image img {
+    width: 384px;
+    height: 222px;
+}
+
+section.container .holder .widget .description .left .news-item .title {
+    float: left;
+    margin-left: 10px;
+    font-size: 30px;
+    text-align: left;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 384px;
+}
+
+section.container .holder .widget .description .left .news-item .footer {
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #999;
+}
+
+section.container .holder .widget .description .left .news-item .footer a {
+    color: #999;
+}
+
+section.container .holder .widget .description .left .news-item .short-summary {
+    float: left;
+    width: 384px;
+    font-size: 14px;
+    margin: 20px 0px 0px 10px;
+    text-align: left;
+}
+
+section.container .holder .widget .description .left .news-item .short-summary span {
+    font-weight: bold;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+section.container .holder .widget .description .right {
+    float: left;
+    width: 321px;
+    height: 420px;
+}
+
+section.container .holder .widget .description .right .news-item {
+    height: 88px;
+    font-size: 100%;
+    margin: 7px 0 7px 0;
+    padding: 0;
+    border: none;
+}
+
+section.container .holder .widget .description .right .news-item .image {
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+    border: 1px solid #CCC;
+}
+
+section.container .holder .widget .description .right .news-item .image img {
+    width: 80px;
+    height: 80px;
+}
+
+section.container .holder .widget .description .right .news-item .title {
+    float: left;
+    margin-left: 6px;
+    font-size: 16px;
+    text-align: left;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 226px;
+}
+
+section.container .holder .widget .description .right .news-item .footer {
+    float: left;
+    font-size: 12px;
+    margin-left: 6px;
+    color: #999;
+}
+
+section.container .holder .widget .description .right .news-item .footer a {
+    color: #999;
+}
+
+@media only screen and (min-width: 906px) and (max-width: 1057px) {
+    header nav,
+    .banner-group .banner,
+    .menu .items,
+    .last-news .highlight,
+    .last-news .holder,
+    .container .holder {
+        max-width: 890px;
+    }
+
+    .container .holder .content-left {
+        width: 600px;
+    }
+
+    section.container .holder .widget .description .left {
+        width: 277px;
+    }
+    
+    section.container .holder .widget .description .left .news-item .image,
+    section.container .holder .widget .description .left .news-item .image img,
+    section.container .holder .widget .description .left .news-item .title,
+    section.container .holder .widget .description .left .news-item .short-summary {
+        width: 245px;
+    }
+}
+
+@media only screen and (min-width: 783px) and (max-width: 906px) {
+    header nav,
+    .banner-group .banner,
+    .menu .items,
+    .last-news .highlight,
+    .last-news .holder,
+    .container .holder {
+        max-width: 768px;
+    }
+
+    .banner-group .banner .content-left {
+        float: none;
+        margin: auto;
+    }
+
+    .banner-group .banner .content-right {
+        display: none;
+    }
+
+    .container .holder .content-left {
+        float: none;
+        margin: auto;
+        width: auto;
+    }
+
+    .container .holder .content-right {
+        display: none;
+    }
+
+    section.container .holder .widget .description .left {
+        width: 442px;
+    }
+    
+    section.container .holder .widget .description .left .news-item .image,
+    section.container .holder .widget .description .left .news-item .image img,
+    section.container .holder .widget .description .left .news-item .title,
+    section.container .holder .widget .description .left .news-item .short-summary {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 783px) {
+    header nav,
+    .banner-group .banner,
+    .menu .items,
+    .last-news .highlight,
+    .last-news .holder,
+    .container .holder {
+        max-width: 320px;
+    }
+
+    .banner-group .banner .content-left {
+        float: none;
+        margin: auto;
+    }
+
+    .banner-group .banner .content-right {
+        display: none;
+    }
+
+    header nav .content-left {
+        display: none;
+    }
+
+    header nav .content-right {
+        width: 100%;
+    }
+
+    .menu .items .hamburger {
+        display: block;
+    }
+
+    .menu .items ul {
+        position: absolute;
+        z-index: 9998;
+        width: auto;
+        display: none;
+    }
+
+    .menu .items ul li {
+        float: none;
+        height: auto;
+        background-color: red;
+    }
+
+    .menu .items ul li img {
+        display: none;
+    }
+
+    .menu .items ul li:hover {
+        background-color: red;
+    }
+
+    .menu .items ul li .sub-menu {
+        position: static;
+        display: block;
+        width: 150px;
+    }
+
+    .menu .items ul li .sub-menu .sub-menu-item {
+        background-color: red;
+    }
+
+    .menu .items ul li .sub-menu .sub-menu-item:hover {
+        background-color: red;
+    }
+
+    .last-news {
+        display: none;
+    }
+
+    .container .holder .content-left {
+        float: none;
+        margin: 10px auto;
+        width: auto;
+    }
+
+    .container .holder .content-left .slideshow .area .dots {
+        z-index: 9997;
+    }
+
+    .container .holder .content-left .slideshow .area .slide .content {
+        height: 110px;
+        top: 225px;
+    }
+
+    .container .holder .content-left .slideshow .area .slide .content .description {
+        height: 90px;
+    }
+
+    .container .holder .content-left .slideshow .area .slide .content .description .title {
+        height: 48px;
+        line-height: 17px;
+        font-size: 15px;
+    }
+
+    .container .holder .content-left .slideshow .area .slide .content .description .sub-title {
+        height: auto;
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .container .holder .content-right {
+        display: none;
+    }
+
+    section.container .holder .widget .description .left {
+        width: 320px;
+    }
+    
+    section.container .holder .widget .description .left .news-item .image,
+    section.container .holder .widget .description .left .news-item .image img,
+    section.container .holder .widget .description .left .news-item .title,
+    section.container .holder .widget .description .left .news-item .short-summary {
+        width: 290px;
+    }
+
+    section.container .holder .widget .description .right {
+        height: auto;
+    }
+
+    section.container .holder .widget .description .right .news-item {
+        margin-left: 10px;
+    }
+
+    section.container .holder .widget .description .right .news-item .image {
+        width: 70px;
+    }
+    
+    section.container .holder .widget .description .right .news-item .image img {
+        width: 70px;
+    }
+    
+    section.container .holder .widget .description .right .news-item .title {
+        width: 216px;
+    }
+}
