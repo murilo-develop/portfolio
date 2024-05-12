@@ -19,7 +19,7 @@ window.onload = function() {
 window.onresize = function() {
     setGlobalVars();
     setSlideWidth();
-    revertToggleMenu();
+    toggleMenu();
 }
 
 function setGlobalVars() {
@@ -77,14 +77,6 @@ function switchDot(oldPosition, newPosition) {
 }
 
 function toggleMenu() {
-    if (menu.style.display == 'none' || menu.style.display == '') {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
-    }
-}
-
-function revertToggleMenu() {
     let bodyWidth = document.getElementsByTagName("body")[0].offsetWidth;
     if (bodyWidth < minWindowWidth && menu.style.display == "block") {
         menu.style.display = "none";
